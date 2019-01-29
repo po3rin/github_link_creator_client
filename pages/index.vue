@@ -26,7 +26,7 @@ export default {
   },
   methods: {
     getCard: function () {
-      axios.get('http://ghlinkcard.com/api/v1/images/' + this.name).then((res) => {
+      axios.get('https://ghlinkcard.com/api/v1/images/' + this.name).then((res) => {
         this.result = res.data.result.value
       }).catch((err) => {
         console.error(err)

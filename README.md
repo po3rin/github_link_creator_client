@@ -1,6 +1,10 @@
 # github_link_creator_client
 
-> My scrumtrulescent Nuxt.js project
+## Overview
+
+GitHub Link Card Creator lets you generate GitHub images has links to your repositories. This card is useful to guide to your repository in blogs etc.
+
+<a href="https://github.com/po3rin/github_link_creator_client"><img src="images/client.png" width="460px"/></a>
 
 ## Build Setup
 
@@ -20,3 +24,9 @@ $ yarn run generate
 ```
 
 For detailed explanation on how things work, checkout [Nuxt.js docs](https://nuxtjs.org).
+
+## API
+
+API repository here.
+
+<a href="https://github.com/po3rin/github_link_creator"><img src="images/example_card.png" width="460px"/></a>
