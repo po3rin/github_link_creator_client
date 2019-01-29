@@ -1,9 +1,12 @@
 <template>
   <div>
     <header class="header">
-      <p>
-        GitHub Link Card Creator
-      </p>
+      <div>
+        <p>GitHub Link Card Creator</p>
+      </div>
+      <div>
+        <a cleass="link" href="https://github.com/po3rin/github_link_creator"><img width="48px" src="~assets/github.png" /></a>
+      </div>
     </header>
     <nuxt />
   </div>
@@ -27,10 +30,16 @@ html {
   box-sizing: border-box;
   margin: 0;
 }
+.link {
+  cursor: pointer;
+}
 .header {
   font-size: 20px;
   width: 100%;
   padding: 24px 48px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 @media screen and (max-width: 480px) {
   .header {
