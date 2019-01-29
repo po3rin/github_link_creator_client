@@ -4,10 +4,11 @@
       <h1>GitHub Link Card Creator</h1>
       <div class="input-wrap">
         <input v-model="name" class="textbox" type="text" placeholder="<user>/<repo>"></input>
-        <div>
-          {{ result }}
-        </div>
       </div>
+      <div v-bind:class="{ result_active: isActive }">
+        {{ result }}
+      </div>
+      <img class="result_img" :src="src"></img>
       <div @click="getCard" class="reqbtn">
         Create Card
       </div>
@@ -21,13 +22,17 @@ export default {
   data() {
     return {
       name: null,
-      result: null
+      result: null,
+      src: null,
+      isActive: false
     }
   },
   methods: {
     getCard: function () {
       axios.get('https://ghlinkcard.com/api/v1/images/' + this.name).then((res) => {
-        this.result = res.data.result.value
+        this.result = res.data.value
+        this.src = res.data.card_url
+        this.isActive = true
       }).catch((err) => {
         console.error(err)
         this.result = `Faild to create link card. Please make sure ${this.name} exits`
@@ -85,6 +90,18 @@ body {
   color: #04286E;
   outline: none;
   text-align: center;
+}
+.result_active {
+  margin-bottom: 24px;
+  padding: 36px 24px;
+  background-color: #35495e;
+  color: white;
+  border-radius: 12px;
+  padding: 36px 24px;
+}
+.result_img {
+  width: 100%;
+  margin-bottom: 24px;
 }
 .reqbtn {
   width: 50%;
