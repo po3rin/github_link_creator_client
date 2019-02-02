@@ -9,6 +9,7 @@
       </div>
     </header>
     <nuxt />
+    <footer class="footer"></footer>
   </div>
 </template>
 
