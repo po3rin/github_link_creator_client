@@ -199,7 +199,7 @@ body {
     text-align: left;
     line-height: 1.8;
   }
-  &_font_warn {
+  &_warn {
     color: orange;
     margin: 6px 0px;
     font-size: 0.9rem;

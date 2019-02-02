@@ -19,7 +19,7 @@ module.exports = {
       { property: 'og:type', content: 'website' },
       { property: 'og:description', content: 'GitHub Link Card Creator lets you generate GitHub images has links to repositories.' },
       // TODO - change domain.
-      { property: 'og:image', content: '~assets/gopher.jpg' },
+      { property: 'og:image', content: 'https://s3-ap-northeast-1.amazonaws.com/github-link-card/po3rin/testtesttest.png' },
       { property: 'og:image:alt', content: 'WEBページのイメージ画像' },
       { name: 'twitter:card', content: 'summary_large_image' },
       { name: 'twitter:site', content: '@10sphere10' },
@@ -33,7 +33,7 @@ module.exports = {
   /*
   ** Customize the progress-bar color
   */
-  loading: { color: '#fff' },
+  loading: { color: '#04286E' },
 
   /*
   ** Global CSS
