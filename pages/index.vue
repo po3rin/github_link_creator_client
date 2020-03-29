@@ -4,7 +4,7 @@
       <div class="card">
         <h1>GitHub Link Card Creator</h1>
         <div class="input-wrap">
-          <input v-model="name" class="textbox" type="text" placeholder="<user>/<repo>"></input>
+          <input v-model="name" class="textbox" type="text" placeholder="<user>/<repo>"/>
         </div>
         <div v-bind:class="{ active_result: isActive}" class="font_warn default_invisibled">
           When pasting this code, please confirm that you can access the URL of the image on the blog or web site. Since you can not access Qiita etc please save the image and upload it again.
@@ -16,7 +16,7 @@
           {{ error }}
         </div>
         <div v-bind:class="{ active_result: isActive }" class="default_invisibled">
-          <img class="card_img" :src="src"></img>
+          <img class="card_img" :src="src"/>
         </div>
         <div @click="getCard" v-bind:class="{ btn_result: DisableBtn }" class="btn_req">
           Create Card
