@@ -67,7 +67,7 @@ export default {
         this.btntext = "reflesh"
         return
       }
-        axios.get('https://ghlinkcard.com/api/v1/images/' + this.name).then((res) => {
+        axios.get('https://a86empvzig.execute-api.ap-northeast-1.amazonaws.com/default/api/v1/images/' + this.name).then((res) => {
         // axios.get('http://localhost:8080/api/v1/images/' + this.name).then((res) => {
         this.result = res.data.value
         this.src = res.data.card_url
