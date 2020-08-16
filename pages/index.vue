@@ -64,7 +64,7 @@ export default {
       if (this.name == ""){
         this.errorActive = true
         this.error = `Faild to create link card. Please enter repository name (format: <user>/<repo>)`
-        this.btntext = "reflesh"
+        this.btntext = "refresh"
         return
       }
         axios.get('https://a86empvzig.execute-api.ap-northeast-1.amazonaws.com/default/api/v1/images/' + this.name).then((res) => {
@@ -72,11 +72,11 @@ export default {
         this.result = res.data.value
         this.src = res.data.card_url
         this.isActive = true
-        this.btntext = "reflesh"
+        this.btntext = "refresh"
       }).catch((err) => {
         this.errorActive = true
         this.error = `Faild to create link card. Please make sure ${this.name} exits`
-        this.btntext = "reflesh"
+        this.btntext = "refresh"
       })
     },
     refresh: function () {
