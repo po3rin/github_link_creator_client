@@ -75,7 +75,7 @@ export default {
         this.btntext = "refresh"
       }).catch((err) => {
         this.errorActive = true
-        this.error = `Faild to create link card. Please make sure ${this.name} exits`
+        this.error = `Faild to create link card. Please make sure ${this.name} exists`
         this.btntext = "refresh"
       })
     },
